@@ -1,6 +1,6 @@
+
 import React, { useState } from 'react';
-import { Plus, Edit, Trash2, Filter } from 'lucide-react';
-import { printer } from 'lucide-react';
+import { Plus, Edit, Trash2, Filter, Printer } from 'lucide-react';
 import { Transaction } from '../data/mockDatabase';
 import PrintableStatement from './PrintableStatement';
 
@@ -78,7 +78,7 @@ const TransactionTable: React.FC<TransactionTableProps> = ({
                 onClick={handlePrint}
                 className="flex items-center gap-2 px-4 py-2 bg-gray-100 text-gray-700 rounded-lg hover:bg-gray-200 transition-all duration-200"
               >
-                <printer size={16} />
+                <Printer size={16} />
                 Print Statement
               </button>
               <button
